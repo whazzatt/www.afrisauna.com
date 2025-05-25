@@ -3220,3 +3220,8 @@ input, select, textarea {
 			}
 
 	}
+
+/* Hides the "View" overlay button */
+a.image.fit.thumb::after {
+    display: none !important;
+}
