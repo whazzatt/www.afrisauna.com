@@ -3221,7 +3221,16 @@ input, select, textarea {
 
 	}
 
-/* Hides the "View" overlay button */
+a.image.fit.thumb {
+    pointer-events: none; /* Disables link functionality */
+    cursor: default;      /* Removes "clickable" cursor */
+}
+
 a.image.fit.thumb::after {
-    display: none !important;
+    display: none !important; /* Hides "View" button */
+}
+
+a.image.fit.thumb img {
+    opacity: 1 !important;    /* Prevents grey-out on hover */
+    filter: none !important;  /* Removes any hover filters */
 }
